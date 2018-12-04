@@ -1,0 +1,72 @@
+
+<!-- Create a new Ionic project inside your ionicapps folder and enter the new folder using VS Code
+First, I want you to create a card that has a header that says "Skat Cat"
+Next, create some card content that has your favorite quote
+Get adventurous and use the Ionic 4 UI Components documentation to play with some UI stuff
+I want you to explore 2 other UI Components (ones that were NOT used during night school) and use them in your app
+Finally, create a button that fires a function called catPower()
+Need help, check the videos below first -->
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Chanel's Ionic Homework 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-card>
+
+    <ion-header>
+      Skat Cat
+      <img src="skat cat.gif" alt="skatcat">
+    </ion-header>
+
+    <ion-card-content>
+    
+      <p>
+        They give us the strength that we needed to do what we had to do for the others, and the others draw strength from us.
+        We change each other.We help each other.We make each other better.And it never ends.
+        It feels like it's ending.
+        Little things do end, but it's never the end of everything, because we don't die.
+        It's not about you or me or any one of us.
+        It's about all of us.
+        And I don't think it just evens out.
+        I think it always crosses over toward the good, toward the brave, toward love.
+
+        - Sasha Williams (The Walking Dead) 11.4.2018
+      </p>
+
+    </ion-card-content>
+
+    <ion-buttons>
+
+      <ion-button (click)= "catPower()"> Go to the World of Skat </ion-button>
+    </ion-buttons>
+
+
+  </ion-card>
+
+
+  <ion-content class="video-background" style="display:none" id="skatcatVid">
+      <ion-list>
+
+          <ion-item class="card video-shadow">
+              <div class="video-container">
+                  <iframe src="https://www.youtube.com/watch?v=quTlKAjWaPM" frameborder="0" width="560" height="315"></iframe>
+              </div>
+          </ion-item>
+    
+      </ion-list>
+  </ion-content>
+
+</ion-content>
+
+<ion-item>
+    <ion-range>
+      <p slot="start"> I'm not Skatty Enough </p>
+      <p slot="end"> Ima Real Skat!</p>
+    </ion-range>
+  </ion-item>
